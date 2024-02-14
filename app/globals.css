@@ -2,32 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@media only screen and (max-width: 480px) {
+    .featuregame {
+        height: auto !important;
+    }
+
+    .backgroundimage {
+        position: relative !important;
+        height: 50% !important;
+    }
+
+    .overlay {
+        position: relative !important;
+        height: auto !important;
+    }
+
+    .featuregame-images {
+        flex-direction: column!important;
+        align-items: center !important;
+    }
+
+    .games {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    .gamesapp {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .gog {
+        width: 80px !important;
+    }
+
+    .steam {
+        width: 150px !important;
+    }
+
+    .app-images {
+        width: 150px !important;
+        height: 50px !important;
+    }
+
+    .header {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+    .iphone {
+        rotate: 270deg;
+        margin: 100px 0;
+    }
+
+    .photo {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        width: 75% !important;
+        gap: 30px !important;
+    }
+
+    .details{
+        margin-top: 50px !important;
+    }
+
+    .handygamesicon {
+        margin: 10px 0 !important;
+        width: 110px !important;
+    }
+
+    .newsletter-title {
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .sub-button {
+        width: 32% !important;
+        font-size: 18px !important;
+        margin: 25px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .about {
+        margin : 0 0 !important;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@media only screen and (max-width: 1024px) {
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    .handygamesicon {
+        margin: 50px 0 !important;
+    }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .title {
+        font-size: 60px !important;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .email {
+        width: 65% !important;
+        padding: 20px !important;
+    }
+
+    .sub-button {
+        margin: 50px;
+        /*width: 30% !important;
+        font-size: 30px !important;
+        letter-spacing: 3px;*/
+    }
 }
