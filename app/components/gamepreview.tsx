@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import "../globals.css";
 
 const images = [
     "/image1.jpg",

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px){
     .featuregame {
         height: auto !important;
     }
@@ -84,6 +84,10 @@
         flex-direction: column !important;
     }
 
+    .email {
+        width: 70% !important;
+    }
+
     .sub-button {
         width: 32% !important;
         font-size: 18px !important;
@@ -105,7 +109,76 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .grow{
+        font-size: 12px !important;
+    }
+
+    .games-preview {
+        width: 100vw !important;
+    }
+
+    .gamesapp {
+        width: 85px !important;
+        gap: 50px !important;
+        margin-left: -90px !important;
+    }
+    .header {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .photo {
+        width: 95% !important;
+    }
+
+    .handygamesicon {
+        width: 25% !important
+    }
+
+    .subscribe {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .email {
+        width: 70% !important;
+        margin: 10px 0 !important;
+    }
+
+    .sub-button {
+        letter-spacing: 2px !important;
+        width: 35% !important;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-left: -40px !important;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .about {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .games-preview {
+        width: 100vw !important;
+    }
+
+    .app-images {
+        gap: 0 !important;
+        width: 125px !important;
+    }
 
     .handygamesicon {
         margin: 50px 0 !important;
@@ -130,5 +203,17 @@
         /*width: 30% !important;
         font-size: 30px !important;
         letter-spacing: 3px;*/
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+
+    .handygamesicon {
+        width: 10% !important;
+        top: 30% !important;
+    }
+
+    .newsletter-title {
+        font-size: 50px !important;
     }
 }

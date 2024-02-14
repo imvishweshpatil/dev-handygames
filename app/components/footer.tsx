@@ -4,8 +4,8 @@ const Footer = () => {
     return (
         <main>
             <div className="footer flex bg-gray-500">
-                <div className="mx-20 mt-10">
-                    <Image className="logo" src={"/handygamelogo.png"} alt={"logo"} width={200} height={100} />
+                <div className="logo mx-20 mt-10">
+                    <Image src={"/handygamelogo.png"} alt={"logo"} width={200} height={100} />
                 </div>
                 <div className="about mt-10">
                     <button className="career text-white ml-20" style={{fontSize:"18px"}}>CAREERS</button>

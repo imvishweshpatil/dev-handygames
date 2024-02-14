@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
+import "../globals.css";
+
 const AboutUs = () => {
     return (
         <main>
@@ -11,7 +13,7 @@ const AboutUs = () => {
                     <Image src={"/iphone.png"} alt={"iphone"} width={800} height={800} style={{margin:"5px 0"}}/>
                 </div>
 
-                <div className="row photo mx-auto gap-20 w-50">
+                <div className="photo row mx-auto gap-20 w-50">
                     <div className="details col flex xl:ml-16">
                         <p>
                             <span className="text-muted font-bold">Now the Main camera shoots in super-high resolution. So it’s easier than ever to</span>
