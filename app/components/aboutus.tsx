@@ -5,7 +5,7 @@ import "../globals.css";
 const AboutUs = () => {
     return (
         <main>
-            <main>
+            <main style={{fontFamily:"sans-serif"}}>
                 <div className="flex justify-center items-center m-8 p-4 font-bold">
                     <h1 className="header text-center" style={{fontSize:"40px"}}>All-new 48MP Main Camera. <br/> For breathtaking, smile. <br/> making picture taking.</h1>
                 </div>
