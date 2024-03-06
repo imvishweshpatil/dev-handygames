@@ -15,22 +15,21 @@ const FeatureGame = () => {
         { title: "AIRHEAD",
             description: "Help a small body save a head-like organism full of air, from a leak that threatens its life." },
 
-        { title: "Endling",
+        { title: "ENDLING",
             description: "Your mission is to safety guide the last mother fox and her three vulnerable cubs trough a dystopian future of an exploited Earth." }
     ];
 
     return (
         <main>
-            <div className="featuregame relative flex flex-col items-center" style={{ flexGrow: 1 }}>
-                <Image src={"/featuregamebg.jpg"} alt={"background"} layout={"fill"} objectFit={"cover"} />
+            <div className="featuregame relative flex flex-col items-center" style={{ flexGrow: 1, fontFamily:"sans-serif" }}>
+                <Image src={"/featuregamebg.jpg"} alt={"background"} layout={"fill"} objectFit={"cover"} className={"featuregamebg"} />
                 <div className="overlay relative flex-grow bg-gray-800 opacity-90 flex flex-col justify-center items-center w-100">
-                    <h1 className=" text-white font-bold flex items-center justify-center p-10"
-                        style={{ letterSpacing: "3px", fontSize: "25px" }}
+                    <h1 className=" text-white font-bold flex items-center justify-center p-5"
+                        style={{ letterSpacing: "4px", fontSize: "28px",}}
                     >
                         FEATURED GAMES
                     </h1>
-                    <u className="border-l-black mb-4"></u>
-                    <div className="featuregame-images flex cursor-pointer w-100">
+                    <div className="featuregame-images flex cursor-pointer w-full">
                         {games.map(({ title, description }, index) => (
                             <div
                                 key={index}
@@ -46,7 +45,7 @@ const FeatureGame = () => {
                                 />
                                 {hoveredIndex === index && (
                                     <div className="absolute inset-0 bg-blue-200 opacity-95 flex items-center justify-center">
-                                        <div className="text-white text-center">
+                                        <div className="text-black text-center">
                                             <h2 className="font-bold mb-2">{title}</h2>
                                             <p>{description}</p>
                                         </div>
@@ -55,7 +54,7 @@ const FeatureGame = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex items-center justify-center mt-10">
+                    <div className="flex items-center justify-center my-10">
                         <button className="games font-bold p-3 text-white"
                                 style={{border: "1px solid white", fontSize:"14px", width:"280px", letterSpacing:"1px"}}
                         >
@@ -63,22 +62,24 @@ const FeatureGame = () => {
                         </button>
                     </div>
                     <div className="getgames mb-10">
-                        <h1 className="flex items-center justify-center text-white mt-10" style={{fontSize:"15px"}}>GET OUR GAMES HERE</h1>
-                        <div className="gamesapp flex gap-40">
+                        <div className="relative my-10">
+                            <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1/4 h-px bg-white"></div>
+                            <h1 className="text-white text-center" style={{ fontSize: "15px" }}>GET OUR GAMES HERE</h1>
+                            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/4 h-px bg-white"></div>
+                        </div>
+                        <div className="gamesapp flex gap-40 cursor-pointer">
                             <Image src={"/GOG1.svg"} alt="gog1" width={100} height={100} className="gog"/>
                             <Image src={"/GOG2.svg"} alt="gog2" width={170} height={100} className="app-images"/>
                             <Image src={"/GOG3.svg"} alt="gog3" width={150} height={100} className="app-images"/>
-                           {/* <Image src={"/GOG4.svg"} alt="gog4" width={150} height={100} className="app-images"/>*/}
                         </div>
-                        <div className="gamesapp flex gap-40">
+                        <div className="gamesapp flex gap-40 cursor-pointer">
                             <Image src={"/GOG6.svg"} alt="gog6" width={100} height={100} className="steam mt-4"/>
                             <Image src={"/GOG7.svg"} alt="gog7" width={170} height={100} className="app-images"/>
-                            <Image src={"/GOG8.svg"} alt="gog8" width={150} height={100} className="app-images"/>
-                            {/*<Image src={"/GOG9.svg"} alt="gog9" width={150} height={100} className="app-images"/>*/}
+                            <Image src={"/GOG4.svg"} alt="gog8" width={150} height={100} className="app-images"/>
                         </div>
-                        <div className="gamesapp flex gap-40">
-                            <Image src={"/GOG11.svg"} alt="gog11" width={170} height={100} className="app-images" style={{marginLeft:"-17px"}}/>
-                            <Image src={"/GOG12.svg"} alt="gog12" width={150} height={100} className="app-images"/>
+                        <div className="gamesapp flex gap-40 mt-5 cursor-pointer">
+                            <Image src={"/GOG12.svg"} alt="gog11" width={100} height={100} className="app-images"/>
+                            <Image src={"/GOG5.svg"} alt="gog12" width={170} height={100} className="app-images"/>
                             <Image src={"/GOG13.svg"} alt="gog13" width={150} height={100} className="app-images"/>
                         </div>
                     </div>
