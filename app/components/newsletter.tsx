@@ -17,7 +17,7 @@ const NewsLetter = () => {
 
     return (
         <main>
-            <div className="overlay relative bg-gray-500 opacity-90" style={{ position: "relative", width: "100%", height: "90vh" }}>
+            <div className="overlay relative bg-gray-500 opacity-90" style={{ position: "relative", width: "100%", height: "90vh", fontFamily:"sfprodisplay" }}>
                 <Image src={"/newsletter.jpg"} alt={"newsletter"} layout={"fill"} objectFit={"cover"} />
                 <div className="relative flex items-center justify-center" style={{ padding: "0px" }}>
                     <Image src="/handygamesicon.png" alt="handygameicon" width={250} height={250} className={"handygamesicon mt-20"} />
@@ -34,7 +34,7 @@ const NewsLetter = () => {
             </div>
 
             {isSubscribed && (
-                <div id="subscribe-popup" className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+                <div id="subscribe-popup" className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" style={{fontFamily:"sfprodisplay"}}>
                     <div className="bg-white p-4 rounded flex flex-column items-center justify-center">
                         <p className="text-center">You are subscribed!</p>
                         <button className="bg-gray-500 text-white p-2 rounded mt-2" onClick={closePopup}>Close</button>

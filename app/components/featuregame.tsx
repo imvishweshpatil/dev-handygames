@@ -24,7 +24,7 @@ const FeatureGame = () => {
             <div className="featuregame relative flex flex-col items-center" style={{ flexGrow: 1, fontFamily:"sans-serif" }}>
                 <Image src={"/featuregamebg.jpg"} alt={"background"} layout={"fill"} objectFit={"cover"} className={"featuregamebg"} />
                 <div className="overlay relative flex-grow bg-gray-800 opacity-90 flex flex-col justify-center items-center w-100">
-                    <h1 className=" text-white font-bold flex items-center justify-center p-5"
+                    <h1 className="heading text-white font-bold flex items-center justify-center p-5"
                         style={{ letterSpacing: "4px", fontSize: "28px",}}
                     >
                         FEATURED GAMES

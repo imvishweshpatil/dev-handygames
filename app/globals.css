@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'sfprodisplay';
+    src: url('../fonts/SFPRODISPLAY.OTF') format('opentype');
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px){
 
     .kidalogo {
-        width: 80px !important;
+        width: 40px !important;
     }
 
     .featuregame {
         height: auto !important;
+    }
+
+    .heading {
+        font-size: 20px !important;
     }
 
     .backgroundimage {
@@ -100,40 +109,24 @@
         letter-spacing: 1px !important;
     }
 
-    .contact {
-        margin-left: 20px !important;
+
+    .footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 20px;
     }
 
-    .contact, .career {
-        font-size: 12px !important;
-    }
-
-    .info {
-        font-size: 10px !important;
+    .footerlogo {
+        width: 85px;
+        height: 85px;
     }
 
     .registration {
-        margin-left: 25px !important;
+        margin-top: 20px;
     }
-
-    .certificate {
-        font-size: 8px !important;
-    }
-
-    /*.footer {
-        display: flex;
-        flex-direction: column !important;
-    }
-
-    .logo {
-        display: none !important;
-    }
-
-    .about {
-        margin : 0 0 !important;
-    }*/
 }
-
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -182,40 +175,16 @@
         width: 35% !important;
     }
 
-    .contact {
-        margin-left: 20px !important;
+    .footer {
+        padding: 30px;
     }
-
-    .contact, .career {
-        font-size: 12px !important;
-    }
-
-    .info {
-        font-size: 10px !important;
-    }
-
-    .registration {
-        margin-left: 25px !important;
-    }
-
-    .certificate {
-        font-size: 8px !important;
-    }
-
-    /*.footer {
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-        margin-left: -40px !important;
-    }
-
-    .logo {
-        display: none !important;
-    }
-
     .about {
-        font-size: 25px !important;
-    }*/
+        font-size: 16px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -252,22 +221,6 @@
         /*width: 30% !important;
         font-size: 30px !important;
         letter-spacing: 3px;*/
-    }
-
-    .contact {
-        margin-left: 40px !important;
-    }
-
-    .contact, .career {
-        font-size: 14px !important;
-    }
-
-    .info {
-        font-size: 10px !important;
-    }
-
-    .registration {
-        margin-left: 5px !important;
     }
 }
 
