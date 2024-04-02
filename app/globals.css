@@ -3,16 +3,26 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'sfprodisplay';
-    src: url('../fonts/SFPRODISPLAY.OTF') format('opentype');
+    font-family: 'Rubik';
+    src: url('./fonts/Rubik.ttf') format('truetype');
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/Karla.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Eczar';
+    src: url('./fonts/Eczar.ttf') format('truetype');
+}
+
+@media screen and (min-width: 320px ) and (max-width: 375px) {
 
     .kidalogo {
         width: 72px !important;
         padding: 10px !important;
-        margin: 0px !important;
+        margin: 0 !important;
     }
 
     .featuregame {
@@ -33,33 +43,399 @@
         height: auto !important;
     }
 
-    .featuregame-images {
-        flex-direction: column!important;
-        align-items: center !important;
+    .section {
+        font-size: 15px !important;
+        margin-top: 85px !important;
+    }
+
+    .title {
+        font-size: 21px !important;
     }
 
     .games {
-        width: 100% !important;
         margin-top: 20px !important;
     }
 
     .gamesapp {
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        gap: 0 !important;
     }
 
-    .gog {
-        width: 80px !important;
+    .col {
+        margin: 16px 0 !important;
     }
 
-    .steam {
-        width: 150px !important;
+    .App {
+        width: 230px !important;
     }
 
-    .app-images {
-        width: 150px !important;
+    .game-title {
+        font-size: 40px !important;
+    }
+
+    .game-description {
+        font-size: 14px !important;
+    }
+
+    .notified {
+        font-size: 20px !important;
+        width: 200px !important;
+        margin: 0 0 !important;
+    }
+
+    .device {
+        overflow: hidden;
+    }
+
+    .user{
+        font-size: 27px !important;
+    }
+
+    .dropdodge {
+        display: none;
+    }
+
+    .phantompets {
+        height: 115px;
+        margin-left: 0 !important;
+    }
+
+    .tapshap {
+        margin-left: -32px !important;
+        width: 293px;
+    }
+
+    .mars {
+        width: 206px ;
+    }
+
+    .seamless, .mobile {
+        font-size: 10px;
+    }
+
+    .paws {
+        font-size: 28px !important;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-top: 50px !important;
+    }
+    .header-box {
+        margin: 0 0 !important;
+    }
+
+    .header {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    .iphone {
+        rotate: 270deg;
+        margin: 100px 0;
+    }
+
+    .photo {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        width: 75% !important;
+        gap: 30px !important;
+    }
+
+    .details {
+        margin-top: 30px !important;
+    }
+
+    .camera {
+        margin-top: 0 !important;
+    }
+
+    .apply {
+        width: 100px !important;
+    }
+
+    .apply-card {
+        padding: 20px !important;
+    }
+
+    .card-title {
+        font-size: 26px !important;
+    }
+
+    .card-des {
+        font-size: 12px !important ;
+        font-weight: 600 !important;
+        margin: 8px 0 !important;
+    }
+
+    .apply-btn {
+        font-size: 11px !important;
+    }
+
+    .join {
+        margin-bottom: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .newsletter {
+        margin: 0 !important;
+    }
+
+    .newsletter-title {
+        display: flex;
+        font-size: 33px !important;
+    }
+
+    .subscribe {
+        margin-top: 30px !important;
+    }
+
+    .des {
+        font-size: 16px !important;
+        width: 110% !important;
+    }
+
+    .input {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .email {
+        width: 280px !important;
+    }
+
+    .sub-button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 21px !important;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .footerlogo {
+        display: none;
+    }
+
+    .career {
+        font-size: 12px !important;
+        margin: 10px 25px 10px 0 !important;
+    }
+
+    .contact {
+        font-size: 12px !important;
+        margin: 10px 25px 10px 0 !important;
+    }
+
+    .trademark {
+        font-size: 10px !important;
+        font-weight: 900 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .startupindia {
+        width: 100px !important;
+        margin: 0 !important;
+    }
+
+    .number {
+        font-size: 8px !important;
+        margin: 0 !important;
+    }
+
+    .footerlogo1 {
+        display: flex;
+        width: 55px !important;
         height: 50px !important;
+    }
+
+    .duns {
+        width: 55px !important;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px){
+
+    .kidalogo {
+        width: 72px !important;
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+
+    .featuregame {
+        height: auto !important;
+    }
+
+    .heading {
+        font-size: 20px !important;
+    }
+
+    .backgroundimage {
+        position: relative !important;
+        height: 50% !important;
+    }
+
+    .overlay {
+        position: relative !important;
+        height: auto !important;
+    }
+
+    .section {
+        font-size: 20px !important;
+        margin-top: 80px !important;
+    }
+
+    .title {
+        font-size: 25px !important;;
+    }
+
+    .gamesapp {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 !important;
+    }
+
+    .App {
+        width: 230px !important;
+        margin-top: 30px !important;
+    }
+
+    .games {
+        margin-top: 0px !important;
+    }
+
+    .game-title {
+        font-size: 30px !important;
+        margin: 10px 0 0 0 !important;
+    }
+
+    .game-description {
+        font-size: 15px !important;
+    }
+
+    .getgames {
+        margin: 0 !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .notified {
+        font-size: 17px !important;
+        width: 175px !important;
+        margin-top: 5px !important;
+    }
+
+    .user{
+        font-size: 29px !important;
+    }
+
+    .device {
+        overflow: hidden;
+    }
+
+    .dropdodge {
+        width: 102px !important;
+        margin-right: -78px !important;
+        margin-left: -27px !important;
+    }
+
+    .phantompets {
+        width: 47px !important;
+        margin-left: 47px !important;
+    }
+
+    .tapshap {
+        width: 285px !important;
+        margin-left: -35px !important;
+    }
+
+    .mars {
+        width: 148px !important;
+        margin-left: -58px !important;
+    }
+
+    /*.seamless-user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+
+    .mobile {
+        font-size: 18px !important;
+    }
+
+    .seamless {
+        font-size: 17px !important;
+    }
+
+    .seamless-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    .mobile {
+        font-size: 16px !important;
+    }
+
+    .paws {
+        font-size: 30px !important;
+    }
+
+    .mishti, .laadu, .simba {
+        margin: 10px !important;
+    }
+
+    .mishti-img {
+        width: 160px !important;
+        margin: 0 55px !important;
+    }
+
+    .pets-title {
+        margin-top: 20px !important;
+    }
+
+    .laadu-img {
+        width: 160px !important;
+        margin: 0 55px !important;
+    }
+
+    .simba-img {
+        width: 160px !important;
+        margin: 0 55px !important;
+    }
+
+    .team {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .container {
+        margin-top: 80px !important;
+    }
+
+    .header-box {
+        margin: 0 0 !important;
     }
 
     .header {
@@ -82,51 +458,140 @@
     }
 
     .details{
+        margin-top: 30px !important;
+    }
+
+    .camera {
+        margin-top: 0 !important;
+    }
+
+    .relative {
+        width: 100vw !important;
+        height: 50vh !important;
+        margin: 30px 0 !important;
+    }
+
+    .absolute {
         margin-top: 50px !important;
     }
 
-    .handygamesicon {
-        margin: 10px 0 !important;
-        width: 120px !important;
+    .apply {
+        width: 300px !important;
+        height: 170px !important;
+    }
+
+    .apply-card {
+        padding: 20px !important;
+    }
+
+    .card-title {
+        font-size: 26px !important;
+    }
+
+    .card-des {
+        font-size: 12px !important ;
+        font-weight: 600 !important;
+        margin: 8px 0 !important;
+    }
+
+    .apply-btn {
+        font-size: 11px !important;
+    }
+
+    .join {
+        margin-bottom: 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .newsletter {
+        margin: 0 !important;
     }
 
     .newsletter-title {
-        font-size: 25px !important;
-        margin: 10px 0 !important;
+        display: flex !important;
+        font-size: 30px !important;
     }
 
     .subscribe {
-        display: flex;
-        flex-direction: column !important;
-    }
-
-    .email {
-        width: 65% !important;
-    }
-
-    .sub-button {
-        width: 28% !important;
-        font-size: 16px !important;
-        margin: 25px !important;
-        letter-spacing: 1px !important;
-    }
-
-
-    .footer {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        padding: 20px;
+        margin-top: 25px !important;
+    }
+
+    .des {
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+
+    .input {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .email {
+        width: 267px !important;
+    }
+
+    .sub-button {
+        width: 158px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+        margin: 25px 55px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .footerlogo {
-        width: 85px;
-        height: 85px;
+        display: none;
     }
 
-    .registration {
-        margin-top: 20px;
+    .career {
+        font-size: 12px !important;
+        margin: 10px 25px 10px 0 !important;
+    }
+
+    .contact {
+        font-size: 12px !important;
+        margin: 10px 25px 10px 0 !important;
+    }
+
+    .trademark {
+        font-size: 10px !important;
+        font-weight: 900 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .startupindia {
+        width: 100px !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    .number {
+        font-size: 8px !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    .footerlogo1 {
+        display: flex;
+        width: 55px !important;
+        height: 50px !important;
+    }
+
+    .duns {
+        width: 55px !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -144,13 +609,108 @@
         width: 100vw !important;
     }
 
-    .gamesapp {
-        width: 85px !important;
-        gap: 50px !important;
-        margin-left: -90px !important;
+    .section {
+        font-size: 25px !important;
     }
+
+    .title {
+        font-size: 35px !important;
+    }
+
+    .gamesapp {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 !important;
+    }
+
+    .App {
+        width: 350px !important;
+    }
+
+    .game-title {
+        font-size: 40px !important;
+    }
+
+    .game-description {
+        font-size: 20px !important;
+    }
+
+    .notified {
+        margin: 0 0 !important;
+    }
+
+    .user {
+        font-size: 40px !important;
+    }
+
+    .user  {
+        font-size: 50px !important;
+    }
+
+    .device {
+        overflow: hidden;
+    }
+
+    .dropdodge {
+        margin-right: -12px !important;
+        margin-left:  20px !important;
+        width: 145px !important;
+    }
+
+    .phantompets {
+        width: 70px;
+        height: 130px;
+        margin: 0 12px 0 0 !important;
+    }
+
+    .tapshap {
+        margin-left: -29px;
+        width: 320px;
+        height: 238px;
+    }
+
+    .mars {
+        margin-left: -46px !important;
+        width: 204px;
+    }
+
+    .seamless {
+        font-size: 24px !important;
+    }
+
+    .mobile {
+        font-size: 24px !important;
+    }
+
+    .paws {
+        font-size: 50px !important;
+    }
+
+    .team {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+
+    .mishti, .laadu {
+        text-align: center !important;
+    }
+
+    .simba {
+        text-align: center !important;
+        margin-top: 50px !important;
+    }
+
+    .role {
+        margin-top: 10px;
+        text-align: center;
+    }
+
     .header {
-        font-size: 36px;
+        font-size: 25px !important;
         font-weight: bold;
     }
 
@@ -158,44 +718,128 @@
         width: 95% !important;
     }
 
-    .handygamesicon {
-        width: 25% !important
+    .absolute {
+        margin-top: 50px !important;
+    }
+
+    .apply {
+        width: 416px !important;
+        height: 191px !important;
+    }
+
+    .apply-card {
+        padding: 20px !important;
+    }
+
+    .card-title {
+        font-size: 36px !important;
+    }
+
+    .card-des {
+        font-size: 17px !important ;
+        font-weight: 600 !important;
+        margin: 8px 0 !important;
+    }
+
+    .apply-btn {
+        font-size: 18px !important;
+    }
+
+    .join {
+        margin-bottom: 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .newsletter {
+        margin: 0 !important;
+    }
+
+    .newsletter-title {
+        display: flex !important;
+        flex-direction: row !important;
+        font-size: 42px !important;
     }
 
     .subscribe {
         display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 25px !important;
+    }
+
+    .des {
+        font-size: 20px;
+        width: 118% !important;
+    }
+
+    .input {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
     }
 
     .email {
-        width: 70% !important;
-        margin: 10px 0 !important;
+        width: 272px !important;
     }
 
     .sub-button {
-        letter-spacing: 2px !important;
-        width: 35% !important;
+        width: 158px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+        margin: 25px 55px !important;
+        letter-spacing: 1px !important;
     }
 
     .footer {
-        padding: 30px;
-    }
-
-    .about {
-        font-size: 16px;
+        display: flex;
+        padding: 15px;
     }
 
     .row {
         flex-direction: column;
         align-items: center;
     }
+
+    .footerlogo {
+        width: 55px !important;
+        height: 55px !important;
+        margin: 10px !important;
+    }
+
+    .career {
+        font-size: 10px !important;
+    }
+
+    .contact {
+        font-size: 10px !important;
+    }
+
+    .trademark {
+        font-size: 8px !important;
+        font-weight: 900 !important;
+    }
+
+    .startupindia {
+        width: 70px !important;
+    }
+
+    .number {
+        font-size: 8px !important;
+    }
+
+    .duns {
+        width: 70px !important
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
-    /*.kidalogo {
-        margin: 20px !important;
-    }*/
 
     .games-preview {
         width: 100vw !important;
@@ -214,36 +858,237 @@
         font-size: 60px !important;
     }
 
-    .subscribe {
+    .gamesapp {
+        margin: 40px 0 !important;
+    }
+
+    .App {
+        width:330px !important;
+    }
+
+    .game-title {
+        font-size: 45px !important;
+    }
+
+    .game-description {
+        font-size: 16px !important;
+    }
+
+    .user {
+        font-size: 60px !important;
+    }
+
+    .device {
         display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .dropdodge {
+        margin:0 -61px 0 0 !important;
+        width: 139px !important;
+    }
+
+    .phantompets {
+        width: 70px;
+        margin-left: 45px !important;
+
+    }
+
+    .tapshap {
+        margin-left: -21px;
+        width: 333px;
+    }
+
+    .mars {
+        margin-left: -56px !important;
+        width: 260px;
+    }
+
+    .seamless {
+        font-size: 22px;
+    }
+
+    .mobile {
+        font-size: 20px;
+    }
+
+    .paws {
+        font-size: 60px !important;
+    }
+
+    .mishti-img {
+        width: 200px;
+        margin-left: 22px;
+    }
+
+    .mishti-role {
+        margin-left: -19px !important;
+    }
+
+    .laadu-img {
+        width: 200px;
+        margin-left: 32px;
+    }
+
+    .laadu-role {
+        margin-left: -8px;
+    }
+
+    .simba-img {
+        width: 200px;
+        margin-left: 9px;
+    }
+
+    .simba-role {
+        margin-left: -12px;
+    }
+
+    .absolute {
+        margin-top: 100px !important;
+    }
+
+
+    .apply {
+        width: 416px !important;
+        height: 191px !important;
+    }
+
+    .apply-card {
+        padding: 20px !important;
+    }
+
+    .card-title {
+        font-size: 36px !important;
+    }
+
+    .card-des {
+        font-size: 17px !important ;
+        font-weight: 600 !important;
+        margin: 8px 0 !important;
+    }
+
+    .apply-btn {
+        font-size: 18px !important;
+    }
+
+    .join {
+        margin-bottom: 100px !important;
+        display: flex !important;
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .newsletter {
+        margin: 0 !important;
+    }
+
+    .newsletter-title {
+        font-size: 60px !important;
+        display: flex;
+    }
+
+    .newsletter-title span {
+        margin-left: 12px;
+    }
+
+    .subscribe {
+        display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .des {
+        font-size: 20px;
+        width: 108% !important;
+        margin-top: 20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .email {
-        width: 65% !important;
-        padding: 20px !important;
+        width: 272px !important;
+        height: 50px !important;
+        margin: 25px 0 !important;
+    }
+
+    .sub-button {
+        width: 158px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+        margin: 25px 55px !important;
+        letter-spacing: 1px !important;
     }
 
     .sub-button {
         margin: 50px;
-        /*width: 30% !important;
-        font-size: 30px !important;
-        letter-spacing: 3px;*/
+    }
+
+    .footerlogo {
+        width :80px !important;
+        height: 80px !important;
+        margin: 10px !important;
+    }
+
+    .career {
+        font-size: 15px !important;
+    }
+
+    .contact {
+        font-size: 15px !important;
+    }
+
+    .trademark {
+        font-size: 10px !important;
+    }
+
+    .startupindia {
+        width: 125px !important;
+    }
+
+    .number {
+        font-size: 12px !important;
+    }
+
+    .duns {
+        width: 80px !important
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 
-    .handygamesicon {
-        width: 10% !important;
-        top: 30% !important;
+    .game-title {
+        font-size: 53px !important;
     }
 
-    .newsletter-title {
-        font-size: 40px !important;
+    .game-description {
+        font-size: 18px !important;
     }
 
-    /*.kidalogo {
-        margin: 20px !important;
-    }*/
+    .dropdodge {
+        margin-right: -23px !important;
+        margin-left: 105px !important;
+        width: 200px;
+        height: 246px;
+    }
+
+    .phantompets {
+        width: 118px !important;
+        height: 195px !important;
+        margin-left: 5px !important;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px)  {
+    .phantompets {
+        width: 165px !important;
+    }
+
+    .dropdodge {
+        margin-left: -25px !important;
+    }
 }

@@ -4,6 +4,10 @@ import FeatureGame from "@/app/components/featuregame";
 import AboutUs from "@/app/components/aboutus";
 import NewsLetter from "@/app/components/newsletter";
 import Footer from "@/app/components/footer";
+import MultiPlatform from "@/app/components/multiplatform";
+/*import Platform from "@/app/components/platform";*/
+import PawsTeam from "@/app/components/pawsteam";
+import "../app/globals.css";
 
 export default function Home() {
     return (
@@ -11,8 +15,11 @@ export default function Home() {
             <Navbar />
             <GamePreview />
             <FeatureGame />
+            <MultiPlatform />
+            {/*<Platform />*/}
+            <PawsTeam />
             <AboutUs />
-            <NewsLetter/>
+            <NewsLetter />
             <Footer />
         </main>
     );
