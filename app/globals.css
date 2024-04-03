@@ -350,6 +350,7 @@
 
     .device {
         overflow: hidden;
+        width: 95% !important;
     }
 
     .dropdodge {

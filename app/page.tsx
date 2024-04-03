@@ -2,9 +2,7 @@ import Navbar from "@/app/components/navbar";
 import GamePreview from "@/app/components/gamepreview";
 import FeatureGame from "@/app/components/featuregame";
 import AboutUs from "@/app/components/aboutus";
-/*
 import NewsLetter from "@/app/components/newsletter";
-*/
 import Footer from "@/app/components/footer";
 import MultiPlatform from "@/app/components/multiplatform";
 /*import Platform from "@/app/components/platform";*/
@@ -21,7 +19,7 @@ export default function Home() {
             {/*<Platform />*/}
             <PawsTeam />
             <AboutUs />
-            {/*<NewsLetter />*/}
+            <NewsLetter />
             <Footer />
         </main>
     );
