@@ -17,7 +17,7 @@
     src: url('./fonts/Eczar.ttf') format('truetype');
 }
 
-@media screen and (min-width: 320px ) and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
 
     .kidalogo {
         width: 72px !important;
